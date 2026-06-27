@@ -1,4 +1,4 @@
-![PR Flow Logo](https://prflow.app/favicon.ico)
+![PR Flow Logo](https://prflow.app/favicon.ico?v=2)
 
 # PR Flow
 **The pull requests you actually care about, ranked by what needs you.**
