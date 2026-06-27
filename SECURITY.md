@@ -17,7 +17,7 @@ We currently provide security updates only for the latest major version of PR Fl
 
 If you believe you have found a security vulnerability in PR Flow, please report it privately to ensure the safety of all users.
 
-You can report vulnerabilities by sending an email to: **arpadkozma89@gmail.com**
+You can report vulnerabilities by using the `Report a vulnerability` button or sending an email to: **arpadkozma89@gmail.com**
 
 ### What to include in your report:
 * A title prefixed with [PRFLOW-SECURITY]
