@@ -3,7 +3,7 @@
 # PR Flow
 **The pull requests you actually care about, ranked by what needs you.**
 
-[Website](https://prflow.app) • [Download](https://github.com/akozma89/pr-flow-releases/releases) • [Report a Bug](https://github.com/akozma89/pr-flow-releases/issues/new?template=bug_report.md) • [Request a Feature](https://github.com/akozma89/pr-flow-releases/issues/new?template=feature_request.md)
+[Website](https://prflow.app) • [Download](https://github.com/akozma89/pr-flow-releases/releases) • [Roadmap](ROADMAP.md) • [Report a Bug](https://github.com/akozma89/pr-flow-releases/issues/new?template=bug_report.md) • [Request a Feature](https://github.com/akozma89/pr-flow-releases/issues/new?template=feature_request.md)
 
 ---
 
