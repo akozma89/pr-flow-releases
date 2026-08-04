@@ -2,7 +2,7 @@
 
 Security is a top priority for PR Flow. While the app is designed with an offline-first and privacy-centric architecture, we take all security concerns seriously.
 
-**Architecture Note for Researchers:** PR Flow operates entirely locally as a desktop application and does not use an intermediate backend server. For most integrations (GitHub, Jira, Claude), PR Flow delegates authentication and network requests entirely to the official command-line tools installed on the host system (e.g., `gh`, `acli`, `claude`) and does **not** store or have direct access to those credentials. For Gerrit, HTTP credentials are encrypted and stored securely on the local machine.
+**Architecture Note for Researchers:** PR Flow's source-code and pull-request data path operates locally and does not pass through a PR Flow backend. For most integrations (GitHub, Jira, Claude), PR Flow delegates authentication and network requests to official command-line tools installed on the host system (e.g., `gh`, `acli`, `claude`) and does **not** store or have direct access to those credentials. For Gerrit, HTTP credentials are encrypted and stored securely on the local machine. Separate licensing and commerce services receive only the data needed for purchases, license delivery, activation, and seat administration; they do not receive source code, pull requests, or diffs.
 
 ## Supported Versions
 

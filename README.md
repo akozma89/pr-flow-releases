@@ -38,7 +38,7 @@ Before opening a new issue, please quickly search the existing issues to see if 
 
 ## 🔒 Security
 
-PR Flow operates entirely locally and does not use an intermediate backend server. For most integrations (GitHub, Jira, Claude), PR Flow delegates authentication and network requests entirely to the official command-line tools installed on your host system (e.g., `gh`, `acli`, `claude`) and does **not** store or have direct access to those credentials. 
+PR Flow's source-code and pull-request data path operates locally and does not pass through a PR Flow backend. For most integrations (GitHub, Jira, Claude), PR Flow delegates authentication and network requests to the official command-line tools installed on your host system (e.g., `gh`, `acli`, `claude`) and does **not** store or have direct access to those credentials. Separate licensing and commerce services handle purchases, license delivery, activation, and seat administration; they never receive source code, pull requests, or diffs.
 
 If you believe you have found a security vulnerability, **please do not open a public issue.** We take security seriously and ask that you disclose it privately.
 
