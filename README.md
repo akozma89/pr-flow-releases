@@ -1,7 +1,7 @@
 ![PR Flow Logo](https://prflow.app/favicon.ico?v=2)
 
 # PR Flow
-**The pull requests you actually care about, ranked by what needs you.**
+**The local-first code review inbox for developers.**
 
 [Website](https://prflow.app) • [Download](https://github.com/akozma89/pr-flow-releases/releases) • [Roadmap](ROADMAP.md) • [Report a Bug](https://github.com/akozma89/pr-flow-releases/issues/new?template=bug_report.md) • [Request a Feature](https://github.com/akozma89/pr-flow-releases/issues/new?template=feature_request.md)
 
@@ -9,51 +9,56 @@
 
 ## 📌 About this Repository
 
-Welcome to the official public repository for **PR Flow**. 
+Welcome to the public releases repository for **PR Flow**.
 
-Because PR Flow is a proprietary, closed-source commercial application, the source code is not hosted here. Instead, this repository serves three specific purposes:
+PR Flow is a commercial desktop application for macOS, Windows, and Linux. The source code is not hosted here. This repository serves three purposes:
 
-1. **Releases:** Hosting the official, signed binaries for macOS, Windows, and Linux.
-2. **Issue Tracking:** Providing a transparent place for users to report bugs and request features.
-3. **Community:** Hosting our [Wall of Love](https://github.com/akozma89/pr-flow-releases/discussions/categories/wall-of-love) and community discussions.
+1. **Releases:** Hosting official signed binaries and release notes.
+2. **Roadmap & Issue Tracking:** Sharing our public roadmap and collecting bug reports and feature requests.
+3. **Community:** Discussing code review workflows and sharing feedback on [Discussions](https://github.com/akozma89/pr-flow-releases/discussions).
 
 ## 🚀 Download & Install
 
-You can always find the latest version of PR Flow on the **[Releases page](../../releases/latest)**.
+Download the latest version on the **[Releases page](https://github.com/akozma89/pr-flow-releases/releases/latest)**:
 
-- **macOS:** Download the `.dmg` file.
-- **Windows:** Download the `.exe` installer.
-- **Linux:** Download the `.AppImage`.
+- **macOS:** `.dmg` (Apple Silicon & Intel)
+- **Windows:** `.exe` installer
+- **Linux:** `.AppImage`
 
-*Note: PR Flow offers a free 14-day trial. No account or email is required to install and start the trial.*
+*PR Flow comes with a 14-day free trial. No credit card or account creation required.*
+
+## ⚡ What is PR Flow?
+
+PR Flow organizes your incoming and outgoing code reviews into an explainable queue across multiple providers:
+
+- **Unified git host support:** First-class support for **GitHub**, **GitLab**, **Azure DevOps**, and **Gerrit**.
+- **Triage by real effort:** Filter PRs by actual change footprint so you can clear quick single-file checks between tasks and schedule complex reviews when you have uninterrupted focus time.
+- **Inspect re-review deltas:** View only the new commits and modified hunks on re-reviews instead of re-reading diffs you already approved.
+- **Filter bot chatter:** Isolate human reviewer feedback from automated CI bots and linter comments.
+- **Explainable queue state:** One-line status summaries clarify whether a PR is blocked by CI, waiting on your sign-off, or awaiting an author's response.
+
+## 🔒 Privacy & Local-First Architecture
+
+PR Flow is built for engineers working in security-conscious codebases:
+
+- **Zero code ingestion:** Source code, diffs, and pull request metadata never touch PR Flow servers.
+- **Ambient CLI authentication:** Integrations leverage your existing local CLI tools and sessions (`gh`, `glab`, or `az`). PR Flow never requests or stores master credentials.
+- **Local AI options:** Summaries and review triage can run against local LLMs (via Ollama) or your personal API keys. No code is transmitted to third parties or used for model training.
+- **No surveillance:** We don't track typing velocity, PR turnaround metrics, or generate management reports.
+
+Review our **[Security Policy](SECURITY.md)** to report any security concerns privately via GitHub Private Vulnerability Reporting.
 
 ## 🐞 Bug Reports & Feature Requests
 
-We actively monitor feedback! If you run into an issue or have an idea for a new feature, please use our issue tracker:
-
-- **[Report a Bug](../../issues/new?template=bug_report.md)**
-- **[Request a Feature](../../issues/new?template=feature_request.md)**
-
-Before opening a new issue, please quickly search the existing issues to see if it has already been reported.
-
-## 🔒 Security
-
-PR Flow's source-code and pull-request data path operates locally and does not pass through a PR Flow backend. For most integrations (GitHub, Jira, Claude), PR Flow delegates authentication and network requests to the official command-line tools installed on your host system (e.g., `gh`, `acli`, `claude`) and does **not** store or have direct access to those credentials. Separate licensing and commerce services handle purchases, license delivery, activation, and seat administration; they never receive source code, pull requests, or diffs.
-
-If you believe you have found a security vulnerability, **please do not open a public issue.** We take security seriously and ask that you disclose it privately.
-
-Please review our full **[Security Policy](SECURITY.md)** for instructions on how to securely report vulnerabilities via GitHub Private Vulnerability Reporting.
+Have a feature request or ran into a glitch?
+- **[Report a Bug](https://github.com/akozma89/pr-flow-releases/issues/new?template=bug_report.md)**
+- **[Request a Feature](https://github.com/akozma89/pr-flow-releases/issues/new?template=feature_request.md)**
+- Review the [Roadmap](ROADMAP.md) to see what is currently in progress.
 
 ## ⚖️ License & Legal
 
 **Copyright (c) 2026 Arpad Kozma. All rights reserved.**
 
-PR Flow is a commercial, proprietary product. The presence of this public repository does not grant any open-source rights. 
+PR Flow is a commercial, proprietary product. Binaries provided in this repository are governed by our **[LICENSE](LICENSE)**.
 
-Downloading, installing, or modifying the binaries hosted in this repository is strictly governed by our proprietary **[LICENSE](LICENSE)**. 
-
-You are expressly prohibited from:
-- Copying, distributing, or commercializing the software.
-- Reverse engineering or attempting to derive the source code from the provided binaries.
-
-For more information, please visit [prflow.app](https://prflow.app).
+For questions, licensing details, or enterprise inquiries, visit [prflow.app](https://prflow.app).
