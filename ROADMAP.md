@@ -43,25 +43,9 @@ We maintain three non-negotiable boundaries:
 
 ---
 
-## 📦 Recently shipped
+## 📦 Already shipped
 
-Highlights from recent releases (see [Releases](https://github.com/akozma89/pr-flow-releases/releases) for full changelogs):
-
-- **v1.17.0**:
-  - *App and diff zoom*: `Cmd +`/`Cmd -` step the whole interface through five sizes, with a separate control that sizes diff text independently of the surrounding UI.
-  - *Repository access you grant, not assume*: every AI surface now asks before answering without your code, states whether a result read your checkout or the diff alone, and Settings → Repositories can grant or revoke that access per agent ahead of time.
-  - *Honest model provenance*: results name the model that actually answered, not the one requested.
-- **v1.16.0**:
-  - *Change Story*: narrative overview of pull requests breaking down changes by functional intent rather than raw file order.
-  - *Settings backup & restore*: export and import your workspace configuration and provider preferences cleanly across machines.
-  - *CI check deduplication*: groups matrix builds and repetitive check runs so failing signals aren't buried in noise.
-- **v1.15.0**:
-  - *Cross-provider reply tracking*: track unresolved comment threads and author replies across GitHub, GitLab, Gerrit, and Azure DevOps.
-  - *Unambiguous PR status*: consolidated single-status indicators per row to eliminate contradictory badge states.
-- **v1.14.0**:
-  - *Author grouping in comments*: clear visual separation between human reviewers, bots, and AI comments to cut through automated noise.
-  - *4-provider quote verification*: verifies that quoted code snippets match the active revision across all supported platforms.
-  - *Consolidated settings*: removed obsolete features tab in favor of direct provider and workflow controls.
+Everything that has landed is in the [release notes](https://github.com/akozma89/pr-flow-releases/releases), with the full changelog for each version — that is the record, and it is generated from the releases themselves rather than restated here.
 
 ---
 
