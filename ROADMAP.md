@@ -47,6 +47,10 @@ We maintain three non-negotiable boundaries:
 
 Highlights from recent releases (see [Releases](https://github.com/akozma89/pr-flow-releases/releases) for full changelogs):
 
+- **v1.17.0**:
+  - *App and diff zoom*: `Cmd +`/`Cmd -` step the whole interface through five sizes, with a separate control that sizes diff text independently of the surrounding UI.
+  - *Repository access you grant, not assume*: every AI surface now asks before answering without your code, states whether a result read your checkout or the diff alone, and Settings → Repositories can grant or revoke that access per agent ahead of time.
+  - *Honest model provenance*: results name the model that actually answered, not the one requested.
 - **v1.16.0**:
   - *Change Story*: narrative overview of pull requests breaking down changes by functional intent rather than raw file order.
   - *Settings backup & restore*: export and import your workspace configuration and provider preferences cleanly across machines.
