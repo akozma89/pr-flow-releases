@@ -10,17 +10,15 @@ Welcome to the PR Flow public roadmap. This document outlines what we are active
 
 _Actively in development for upcoming minor releases._
 
-- **Re-review delta inspector**: when an author pushes updates after your initial pass, inspect only the commits and diff hunks added since your last review stamp instead of re-reading the full change.
-- **Review effort triage**: categorize incoming PRs by actual review size (quick single-file adjustments vs multi-file architectural changes) to help knock out small reviews between focus blocks.
-- **Explainable queue ordering**: a clear, single-line explanation in the UI showing why each PR is placed where it is in your review queue (e.g. unblocked CI, waiting on your approval, or author replied to your thread).
-- **Commit-stamped comment findings**: ensure inline review remarks stay anchored to exact historical commit hashes, even when authors rebase or force-push branches.
+- **Every AI judgement names its commit**: risk, complexity, findings and change stories are each made against one revision of the code, and the branch moves on without them. The queue and the board started saying so in v1.18.0, alongside the pull request details; the menu-bar glance, the daily digest and notifications are what remains — in the same words on every surface, with re-evaluation offered wherever the marker appears. The same rule then extends to other people's work: *"approved at `abc1234`, 3 commits have landed since"*, read from your own provider, with no review state shared or synced between machines.
+- **Stack Journey (part two)**: contextual navigation across stacked branches, tracking parent branch status and warning when an upstream rebase invalidates downstream pull requests.
+- **Immediate CI actions**: re-run a failed check, re-run every check, or cancel a running one from the card, the details pane or the menu-bar glance — each one an action you take and PR Flow records, never an automatic retry.
 
 ## 📅 Next (Upcoming)
 
 _Scoped and prioritized. Order adjusts based on user feedback._
 
 - **Stateful review snoozing**: silence a PR until a specific trigger occurs—such as new commits pushed, CI passing, or an assigned co-reviewer submitting their comments.
-- **Stack Journey (part two)**: contextual navigation across stacked branches, tracking parent branch status and warning when an upstream rebase invalidates downstream pull requests.
 - **Local CI autopsy**: pull CI failure logs locally through your existing provider credentials (`gh`, `glab`, `az`) to inspect failed assertions without opening multiple browser tabs.
 - **Provider-level tool health**: live diagnostics in Settings showing which local CLIs and tokens are ready and which need updates or re-authentication.
 
@@ -31,7 +29,7 @@ _Research directions and experiments. These may evolve significantly or be shelv
 - **Author feedback workbench**: turn review comments into a live checklist that marks items addressed as you push fixes, then reply and resolve in batch.
 - **Review context recovery**: assemble git blame and prior PR genealogy on demand to answer why a piece of code exists before touching it.
 - **Ask Repository**: path-scoped, read-only chat grounded in an opt-in local checkout to check call sites and blast radius without opening a second editor.
-- **Deeper self-hosted parity**: expanding configuration support for enterprise on-premises instances (GitLab Self-Managed, GitHub Enterprise Server, Azure DevOps Server, and self-hosted Gerrit).
+- **Deeper self-hosted parity**: GitLab Self-Managed and self-hosted Gerrit are supported today; extending that configuration support to GitHub Enterprise Server and Azure DevOps Server.
 
 ## 🧭 Principles that shape this roadmap
 
@@ -46,6 +44,8 @@ We maintain three non-negotiable boundaries:
 ## 📦 Already shipped
 
 Everything that has landed is in the [release notes](https://github.com/akozma89/pr-flow-releases/releases), with the full changelog for each version — that is the record, and it is generated from the releases themselves rather than restated here.
+
+Most recently, **v1.18.0** closed three items that sat in **Now**: the re-review delta (a pull request you have already reviewed opens on what landed since your pass), review effort bands read from the change itself rather than estimated in minutes, and one explainable order shared by the queue, the board, the menu-bar glance and the daily digest.
 
 ---
 
