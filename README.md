@@ -25,7 +25,7 @@ Download the latest version on the **[Releases page](https://github.com/akozma89
 - **Windows:** `.exe` installer
 - **Linux:** `.AppImage`
 
-*PR Flow comes with a 14-day free trial. No credit card or account creation required.*
+*PR Flow comes with a 7-day free trial. No credit card or account creation required.*
 
 ## ⚡ What is PR Flow?
 
