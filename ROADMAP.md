@@ -12,8 +12,6 @@ _Actively in development for upcoming minor releases._
 
 - **Every AI judgement names its commit**: risk, complexity, findings and change stories are each made against one revision of the code, and the branch moves on without them. The queue and the board started saying so in v1.18.0, alongside the pull request details; the menu-bar glance, the daily digest and notifications are what remains — in the same words on every surface, with re-evaluation offered wherever the marker appears. The same rule then extends to other people's work: *"approved at `abc1234`, 3 commits have landed since"*, read from your own provider, with no review state shared or synced between machines.
 - **Stack Journey (part two)**: contextual navigation across stacked branches, tracking parent branch status and warning when an upstream rebase invalidates downstream pull requests.
-- **Immediate CI actions**: re-run failed jobs, re-run everything, or cancel a running run from the pull request details — on GitHub Actions and GitLab pipelines, re-queue a build validation policy on Azure DevOps, and an opt-in "recheck" comment for Gerrit CI that listens for one. When a required check fails on one of your GitHub or GitLab pull requests, its row in the list and in the menu-bar glance gets a one-click re-run. Each one is an action you take and PR Flow records, never an automatic retry.
-- **Merge, close and update a branch from PR Flow**: on your own pull requests, merge, submit or complete with the methods your repository allows (or add it to GitHub's merge queue); close, abandon, reopen or restore; and update the branch or rebase it. Every action is confirmed against your provider's current state and acts on the commit you saw — PR Flow merges only when you click Merge.
 
 ## 📅 Next (Upcoming)
 
@@ -50,7 +48,7 @@ We maintain three non-negotiable boundaries:
 
 Everything that has landed is in the [release notes](https://github.com/akozma89/pr-flow-releases/releases), with the full changelog for each version — that is the record, and it is generated from the releases themselves rather than restated here.
 
-Most recently, **v1.19.0** taught PR Flow which checks actually gate a merge — a failing check your repository doesn't require no longer reads as "Fix CI" — and **v1.20.0** added an optional feedback survey at the end of the trial. Before that, **v1.18.0** closed three items that sat in **Now**: the re-review delta, review effort bands read from the change itself, and one explainable order shared by the queue, the board, the menu-bar glance and the daily digest.
+Most recently, **v1.21.0** closed **Immediate CI actions** and added merge, close and update-branch actions: re-run or cancel CI from the pull request (with a one-click re-run on your own failing GitHub and GitLab pull requests), and merge, close, reopen or update a branch on your own pull requests — each confirmed against your provider first, and merged only when you click. Before that, **v1.19.0** taught PR Flow which checks actually gate a merge, and **v1.20.0** added an optional feedback survey at the end of the trial.
 
 ---
 
